@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/notiContainer"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/cont1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ivCheck"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNotiTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:maxLines="2"
+                android:text="Yey! Wallet Deposit Request Approved!"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tvNotiDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNotiTitle"
+                android:layout_marginTop="5dp"
+                android:maxLines="2"
+                android:text="Your wallet deposit request has been approved. We have deposited 900 coins tp your wallet."
+                android:textSize="@dimen/_8sdp" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ivCheck"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_1sdp"
+            android:padding="2dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:tint="@color/successColor" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
